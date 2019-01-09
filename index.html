@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Scripts Basics 2</title>
+</head>
+<body>
+
+<script>
+
+    var name = prompt("What is your name?");
+    console.log("Hello " + name);
+
+    name = prompt("What is your name?");
+    console.log("Good afternoon!");
+    console.log("Hello " + name);
+
+    var balance = prompt("What is your current balance?");
+    console.log("Congrats I have granted you $50 more!");
+    balance = parseInt(balance);
+    console.log("Your new balance is " + (balance + 50));
+
+    var num1 = prompt("Input fisrt number");
+    var num2 = prompt("Input second number");
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+    console.log("The sum of these numbers is " + (num1 + num2));
+    console.log("The diffrence of these numbers is " + (num1 - num2));
+
+    var rate = 0.0925;
+    var price = prompt("What is the price of your item");
+    price = parseInt(price);
+    rate = parseFloat(rate);
+    var tax = price*rate;
+    console.log("The price after tax is " + (price+tax));
+
+</script>
+
+</body>
+</html>
